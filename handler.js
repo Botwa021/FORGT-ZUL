@@ -775,7 +775,7 @@ global.dfail = (type, m, conn) => {
 Halo ${user.name}
 Yuk Daftar Dulu Karena Anda Belum Terdaftar Dalam Database Bot
     
-📍 Ketik : #daftar Alpin.umur
+📍 Ketik : #daftar Sid.umur
 ▸ Contoh : #daftar ${user.name}.13`
     }[type]
     if (msg) return conn.sendHButtonLoc(m.chat,pp, des, msg, "GITHUB", github, `OWNER`, `.owner`, m)
