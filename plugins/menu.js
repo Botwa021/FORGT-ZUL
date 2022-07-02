@@ -18,19 +18,19 @@ const defaultMenu = {
   ⬣───「 *DASHBOARD* 」───⬣
   
 ┌─── 「 *TODAY* 」───⬣
-│☂︎ *Days:* %week %weton
-│☂︎ *Date:* %date
-│☂︎ *Islamic Date:* %dateIslamic
-│☂︎ *Time:* %time
+│• *Days:* %week %weton
+│• *Date:* %date
+│• *Islamic Date:* %dateIslamic
+│• *Time:* %time
 ╰────────────⬣
 ┌───「 *INFO USER* 」──⬣
-│☂︎ Name: %name
-│☂︎ Status: --
-│☂︎ Limit: %limit
-│☂︎ Money: %money
-│☂︎ Exp: %totalexp
-│☂︎ Level: %level
-│☂︎ Role: %role
+│• Name: %name
+│• Status: --
+│• Limit: %limit
+│• Money: %money
+│• Exp: %totalexp
+│• Level: %level
+│• Role: %role
 ╰────────────⬣
 ⃝▣──「 *INFO CMD* 」───⬣
 │ 🅟 = *Premium*
@@ -38,7 +38,7 @@ const defaultMenu = {
 ▣────────────⬣
 %readmore`.trimStart(), 
  header: '⃝▣──「 %category 」───⬣',
- body: '┆✦ %cmd %isPremium %islimit',
+ body: '┆⬣ %cmd %isPremium %islimit',
  footer: '▣───────────⬣\n',
   after: ``,
 }
@@ -226,16 +226,15 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
         listMessage: {
             title: `${ucapan()}, ${name}`,
             description: `┏━━━━〔 *${wm}* 〕━━━⬣
-┃✰ Aktif selama ${uptime}
-┃✰ ${Object.keys(global.db.data.users).length} Pengguna
-┃✰ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
-┃✰ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-┃✰ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-┃✰ Jangan Lupa Donasi Kak
+┃⬣ Aktif selama ${uptime}
+┃⬣ ${Object.keys(global.db.data.users).length} Pengguna
+┃⬣ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
+┃⬣ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
+┃⬣ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
 ┗━━━━━━━━━━━━━━━⬣`,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "𝘾𝙍𝙀𝘼𝙏𝙀𝘿 𝘽𝙔 𝘼𝙇𝙋𝙄𝙉",
+            footerText: "© Zul-MD",
             mtype: 'listMessage',
             sections: [
               {
@@ -416,8 +415,8 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedFooterText: wm,
            hydratedButtons: [{
             urlButton: {
-               displayText: '📍MY INSTAGRAM',
-               url: 'https://instagram.com/en4y.pin'
+               displayText: 'Instagram',
+               url: 'https://instagram.com/mursid.st'
              }
 
            },
