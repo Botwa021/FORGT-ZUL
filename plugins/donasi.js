@@ -10,14 +10,19 @@ let anu = `*─────� DONATE 」 ───*
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ┌〔 Donasi • Emoney 〕
-├🏧 082287750102 (OVO/Dana/GoPay)
+├🏧 088233832771 (Dana/GoPay) 
+├ wa.me/6288233832771 
+└────
+┌〔 Donasi • Malaysia 〕
+├ Donasi chat owner ya kak
+├ wa.me/601127316764 
 └────
 Berapapun donasi kalian akan sangat berarti
 
 Arigatou! :)
 
 Contact person Owner:
-https://wa.me/6282287750102?text=Assalamu'alaikum+Bang+Donasi (Owner)
+https://wa.me/601127316764?text=Assalamu'alaikum+Bang+Donasi (Owner)
 
 *Donasi Via Follow Instagram Juga Boleh*`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
@@ -29,8 +34,8 @@ https://wa.me/6282287750102?text=Assalamu'alaikum+Bang+Donasi (Owner)
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: 'MY INSTAGRAM 💌',
-               url: 'https://instagram.com/en4y.pin'
+               displayText: 'Instagram',
+               url: 'https://instagram.com/mursid.st'
              }
 
            },
